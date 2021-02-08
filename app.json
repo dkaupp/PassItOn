@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "PassItOn",
+    "slug": "PassItOn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#009975"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#ffff"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "a710a9a3e31b04e20e2dd61453d87101"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
